@@ -56,8 +56,6 @@ def fit():
     svmMod.fit(x_train, y_train)
     y_train_pred = svmMod.predict(x_train)
     y_test_pred = svmMod.predict(x_test)
-    y_train_pred = svmMod.predict(x_train)
-    y_test_pred = svmMod.predict(x_test)
     tree_train = accuracy_score(y_train, y_train_pred)
     tree_test = accuracy_score(y_test, y_test_pred)
     print('SVM train/test accuracies %.4f/%.4f' % (tree_train, tree_test))
